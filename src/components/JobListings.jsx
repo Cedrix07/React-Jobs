@@ -13,6 +13,7 @@ const recentJobs = jobs.slice(0, 3);
                     Browse Jobs
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    {/* js es6 map to access all json data */}
                     { recentJobs.map((job) => (
                         <JobListing key={job.id} job={job}/>
                     )) }
